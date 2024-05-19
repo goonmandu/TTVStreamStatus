@@ -1,0 +1,9 @@
+# FILES
+*auth.py
+discord.log
+bot_config.json
+
+# DIRS
+*venv/
+.idea/
+__pycache__/
