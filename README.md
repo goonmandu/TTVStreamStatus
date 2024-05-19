@@ -2,9 +2,11 @@
 This Bot changes a Discord Voice Channel's name to whatever you choose based on whether the specified Twitch streamer is online or offline.
 
 ## Requirements
-```shell
-pip3 install -r requirements.txt
-```
+- Python 3.8 or newer
+- Python dependencies:
+    ```shell
+    pip3 install -r requirements.txt
+    ```
 
 ## Usage
 1. Create a Discord Bot, get the bot token, then invite the bot to your Discord server.
