@@ -30,6 +30,9 @@ pip3 install -r requirements.txt
      ACCESS_TOKEN = "The access token"  # in quotes.
      ```
 5. Run the bot.
+    ```shell
+    python3 main.py
+    ```
 6. With the bot online, you may want to specify the following:
    - The Discord Voice Channel ID
      - `ss!vc voice_channel_id`
