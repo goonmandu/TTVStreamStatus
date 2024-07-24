@@ -86,6 +86,7 @@ bot = StreamStatus(intents=intents, command_prefix="ss!")
 
 # Setter commands
 @bot.command()
+@commands.has_permissions(administrator=True)
 async def ttv(ctx, ttv_name):
     bot.config["twitch_channel_name"] = ttv_name
     await ctx.send(f"Twitch channel changed to `{bot.config['twitch_channel_name']}`!\n"
@@ -94,6 +95,7 @@ async def ttv(ctx, ttv_name):
 
 
 @bot.command()
+@commands.has_permissions(administrator=True)
 async def vc(ctx, voice_channel_id):
     bot.config["voice_channel_id"] = voice_channel_id
     bot.voice_channel = bot.get_channel(int(bot.config["voice_channel_id"]))
@@ -102,6 +104,7 @@ async def vc(ctx, voice_channel_id):
 
 
 @bot.command()
+@commands.has_permissions(administrator=True)
 async def on(ctx, *online_message):
     bot.config["online_message"] = ' '.join(map(str, online_message))
     await ctx.send(f"Online message changed to `{bot.config['online_message']}`")
@@ -109,6 +112,7 @@ async def on(ctx, *online_message):
 
 
 @bot.command()
+@commands.has_permissions(administrator=True)
 async def off(ctx, *offline_message):
     bot.config["offline_message"] = ' '.join(map(str, offline_message))
     await ctx.send(f"Offline message changed to `{bot.config['offline_message']}`")

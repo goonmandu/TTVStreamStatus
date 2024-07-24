@@ -35,7 +35,11 @@ This Bot changes a Discord Voice Channel's name to whatever you choose based on 
     ```shell
     python3 main.py
     ```
-6. With the bot online, you may want to specify the following:
+   - Alternatively, to run the bot in the background so that it doesn't stop when you close the terminal:
+    ```shell
+    nohup python3 main.py &
+    ```
+6. With the bot online, you may want to specify the following (admin only):
    - The Discord Voice Channel ID
      - `ss!vc voice_channel_id`
    - The Twitch Streamer's username
